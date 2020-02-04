@@ -1,0 +1,25 @@
+//https://hyperskill.org/learn/step/2157
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static boolean isVowel(char ch) {
+		
+    switch (Character.toLowerCase(ch)) {
+     case 'a':
+     case 'e':
+     case 'i':
+     case 'o':
+     case 'u':
+     return true;
+     default: return false;
+}
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        char letter = scanner.nextLine().charAt(0);
+        System.out.println(isVowel(letter) ? "YES" : "NO");
+    }
+}
