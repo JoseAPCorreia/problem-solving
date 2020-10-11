@@ -1,0 +1,12 @@
+function sumAll(arr) {
+  let currentValue = Math.min(...arr);
+  let result = 0;
+  while(currentValue <= Math.max(...arr)){
+    result += currentValue;
+    currentValue++;
+  }
+
+  return result;
+}
+
+sumAll([1, 4]);
