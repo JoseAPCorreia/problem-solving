@@ -1,0 +1,15 @@
+//[X]Make a new var to store str as is needed
+//[X]Remove special symbols from new var
+//[X]Convert to lowercase the new var
+//[X]Make a variable for the reverse order
+//[X]Return the comparation "===" of the str with the reverse order variable
+function palindrome(str) {
+  str = str.replace(/[^0-9a-z]/gi, '').toLowerCase();
+  let strReverse = str.split("").reverse().join("");
+
+  return str === strReverse;
+}
+
+
+
+palindrome("eye");
